@@ -1,0 +1,158 @@
+# vsim -c -coverage ram_tb_top_opt -l logs/ram_walking1_data_test.log "+TESTNAME=ram_walking1_data_test" 
+# Start time: 10:48:43 on Sep 19,2026
+# Loading sv_std.std
+# Loading work.ram_tb_top_sv_unit(fast)
+# Loading work.ram_tb_top(fast)
+# Loading work.ram_if(fast__2)
+# Loading work.decoder_ram(fast)
+# Loading work.ram_if(fast)
+# 
+# ==================================================
+# [TOP] RUNNING TEST : ram_walking1_data_test
+# ==================================================
+# 
+# [ENV] All components built
+# applying the reset task 
+# WR_MON Started
+# RD_MON Started
+# [RM] Reference model write task started
+# [RM] Reference model read task started
+# [SB] read check started
+# [SB] write check started
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# reset deasserted 
+# [ENV] All threads started, DUT reset done
+# 
+# [TEST] ===== ram_walking1_data_test =====
+# [GEN] Sending 8 writes
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 0 wdata = 1 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 1 wdata = 2 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 2 wdata = 4 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 3 wdata = 8 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 4 wdata = 10 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 5 wdata = 20 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 6 wdata = 40 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 7 wdata = 80 rdata = 0 valid = 0
+# waiting for valid 
+# waiting for valid 
+# 55 : wr_mon | op = WRITE we = 0 addr = 0 wdata = 1 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 0, data = 1
+# [SB] PASS: op=WRITE addr=0 rdata=0 wdata=1 valid=0
+# waiting for valid 
+# 75 : wr_mon | op = WRITE we = 0 addr = 1 wdata = 2 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 1, data = 2
+# [SB] PASS: op=WRITE addr=1 rdata=0 wdata=2 valid=0
+# waiting for valid 
+# 95 : wr_mon | op = WRITE we = 0 addr = 2 wdata = 4 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 2, data = 4
+# [SB] PASS: op=WRITE addr=2 rdata=0 wdata=4 valid=0
+# waiting for valid 
+# 115 : wr_mon | op = WRITE we = 0 addr = 3 wdata = 8 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 3, data = 8
+# [SB] PASS: op=WRITE addr=3 rdata=0 wdata=8 valid=0
+# waiting for valid 
+# 135 : wr_mon | op = WRITE we = 0 addr = 4 wdata = 10 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 4, data = 10
+# [SB] PASS: op=WRITE addr=4 rdata=0 wdata=10 valid=0
+# waiting for valid 
+# 155 : wr_mon | op = WRITE we = 0 addr = 5 wdata = 20 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 5, data = 20
+# [SB] PASS: op=WRITE addr=5 rdata=0 wdata=20 valid=0
+# waiting for valid 
+# 175 : wr_mon | op = WRITE we = 0 addr = 6 wdata = 40 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 6, data = 40
+# [SB] PASS: op=WRITE addr=6 rdata=0 wdata=40 valid=0
+# waiting for valid 
+# 195 : wr_mon | op = WRITE we = 0 addr = 7 wdata = 80 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 8 reads
+# 195 : [GEN-RD] | op = READ we = 0 addr = 0 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 1 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 2 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 3 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 4 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 5 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 6 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 7 wdata = 0 rdata = 0 valid = 0
+# [RM] write address = 7, data = 80
+# [SB] PASS: op=WRITE addr=7 rdata=0 wdata=80 valid=0
+# waiting for valid 
+# 225 : rd_mon | op = READ we = 0 addr = 0 wdata = 0 rdata = 1 valid = 1
+# [RM] read address = 0, expected data = 1
+# [SB] PASS: op=READ addr=0 rdata=1 wdata=0 valid=1
+# 245 : rd_mon | op = READ we = 0 addr = 1 wdata = 0 rdata = 2 valid = 1
+# [RM] read address = 1, expected data = 2
+# [SB] PASS: op=READ addr=1 rdata=2 wdata=0 valid=1
+# 265 : rd_mon | op = READ we = 0 addr = 2 wdata = 0 rdata = 4 valid = 1
+# [RM] read address = 2, expected data = 4
+# [SB] PASS: op=READ addr=2 rdata=4 wdata=0 valid=1
+# 285 : rd_mon | op = READ we = 0 addr = 3 wdata = 0 rdata = 8 valid = 1
+# [RM] read address = 3, expected data = 8
+# [SB] PASS: op=READ addr=3 rdata=8 wdata=0 valid=1
+# 305 : rd_mon | op = READ we = 0 addr = 4 wdata = 0 rdata = 10 valid = 1
+# [RM] read address = 4, expected data = 10
+# [SB] PASS: op=READ addr=4 rdata=10 wdata=0 valid=1
+# 325 : rd_mon | op = READ we = 0 addr = 5 wdata = 0 rdata = 20 valid = 1
+# [RM] read address = 5, expected data = 20
+# [SB] PASS: op=READ addr=5 rdata=20 wdata=0 valid=1
+# 345 : rd_mon | op = READ we = 0 addr = 6 wdata = 0 rdata = 40 valid = 1
+# [RM] read address = 6, expected data = 40
+# [SB] PASS: op=READ addr=6 rdata=40 wdata=0 valid=1
+# 365 : rd_mon | op = READ we = 0 addr = 7 wdata = 0 rdata = 80 valid = 1
+# [RM] read address = 7, expected data = 80
+# [SB] PASS: op=READ addr=7 rdata=80 wdata=0 valid=1
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# 
+# ==================================================
+# [SB] SCOREBOARD REPORT
+# ==================================================
+# [SB] Pass  = 16
+# [SB] Fail  = 0
+# [SB] Total = 16
+# [SB] RESULT: ALL CHECKS PASSED
+# ==================================================
+# 
+# 
+# ==================================================
+# [TOP] TEST COMPLETED : ram_walking1_data_test
+# ==================================================
+# 
+# waiting for valid 
+# waiting for valid 
+# ** Note: $stop    : ./verification/ram_tb_top.sv(88)
+#    Time: 515 ns  Iteration: 0  Instance: /ram_tb_top
+# Break in Module ram_tb_top at ./verification/ram_tb_top.sv line 88
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# End time: 10:49:08 on Sep 19,2026, Elapsed time: 0:00:25
+# Errors: 2, Warnings: 1
+# 
+# ====================================
+# RUNNING TEST: ram_walking0_data_test
+# ====================================
+# 

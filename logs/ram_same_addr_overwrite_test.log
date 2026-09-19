@@ -1,0 +1,275 @@
+# vsim -c -coverage ram_tb_top_opt -l logs/ram_same_addr_overwrite_test.log "+TESTNAME=ram_same_addr_overwrite_test" 
+# Start time: 10:50:12 on Sep 19,2026
+# Loading sv_std.std
+# Loading work.ram_tb_top_sv_unit(fast)
+# Loading work.ram_tb_top(fast)
+# Loading work.ram_if(fast__2)
+# Loading work.decoder_ram(fast)
+# Loading work.ram_if(fast)
+# 
+# ==================================================
+# [TOP] RUNNING TEST : ram_same_addr_overwrite_test
+# ==================================================
+# 
+# [ENV] All components built
+# applying the reset task 
+# WR_MON Started
+# RD_MON Started
+# [RM] Reference model write task started
+# [RM] Reference model read task started
+# [SB] read check started
+# [SB] write check started
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# reset deasserted 
+# [ENV] All threads started, DUT reset done
+# 
+# [TEST] ===== ram_same_addr_overwrite_test =====
+# [GEN] Sending 1 writes
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 0 wdata = aa rdata = 0 valid = 0
+# waiting for valid 
+# waiting for valid 
+# 55 : wr_mon | op = WRITE we = 0 addr = 0 wdata = aa rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 55 : [GEN-WR] | op = WRITE we = 0 addr = 0 wdata = 55 rdata = 0 valid = 0
+# [RM] write address = 0, data = aa
+# [SB] PASS: op=WRITE addr=0 rdata=0 wdata=aa valid=0
+# waiting for valid 
+# 75 : wr_mon | op = WRITE we = 0 addr = 0 wdata = 55 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 75 : [GEN-RD] | op = READ we = 0 addr = 0 wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 75 : [GEN-WR] | op = WRITE we = 0 addr = 10 wdata = 55 rdata = 0 valid = 0
+# [RM] write address = 0, data = 55
+# [SB] PASS: op=WRITE addr=0 rdata=0 wdata=55 valid=0
+# waiting for valid 
+# 95 : wr_mon | op = WRITE we = 0 addr = 0 wdata = 55 rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 95 : [GEN-WR] | op = WRITE we = 0 addr = 10 wdata = aa rdata = 0 valid = 0
+# [RM] write address = 0, data = 55
+# [SB] PASS: op=WRITE addr=0 rdata=0 wdata=55 valid=0
+# 105 : rd_mon | op = READ we = 0 addr = 0 wdata = 0 rdata = 55 valid = 1
+# [RM] read address = 0, expected data = 55
+# [SB] PASS: op=READ addr=0 rdata=55 wdata=0 valid=1
+# 115 : wr_mon | op = WRITE we = 0 addr = 10 wdata = aa rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 115 : [GEN-RD] | op = READ we = 0 addr = 10 wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 115 : [GEN-WR] | op = WRITE we = 0 addr = 1f wdata = ff rdata = 0 valid = 0
+# [RM] write address = 10, data = aa
+# [SB] PASS: op=WRITE addr=10 rdata=0 wdata=aa valid=0
+# waiting for valid 
+# 135 : wr_mon | op = WRITE we = 0 addr = 10 wdata = ff rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 135 : [GEN-WR] | op = WRITE we = 0 addr = 1f wdata = 0 rdata = 0 valid = 0
+# [RM] write address = 10, data = ff
+# [SB] PASS: op=WRITE addr=10 rdata=0 wdata=ff valid=0
+# 145 : rd_mon | op = READ we = 0 addr = 10 wdata = 0 rdata = aa valid = 1
+# [RM] read address = 10, expected data = ff
+# [SB] FAIL: Data mismatch  actual=aa expected=ff
+# 155 : wr_mon | op = WRITE we = 0 addr = 1f wdata = 0 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 155 : [GEN-RD] | op = READ we = 0 addr = 1f wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 155 : [GEN-WR] | op = WRITE we = 0 addr = 20 wdata = 0 rdata = 0 valid = 0
+# [RM] write address = 1f, data = 0
+# [SB] PASS: op=WRITE addr=1f rdata=0 wdata=0 valid=0
+# waiting for valid 
+# 175 : wr_mon | op = WRITE we = 0 addr = 1f wdata = 0 rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 175 : [GEN-WR] | op = WRITE we = 0 addr = 20 wdata = ff rdata = 0 valid = 0
+# [RM] write address = 1f, data = 0
+# [SB] PASS: op=WRITE addr=1f rdata=0 wdata=0 valid=0
+# 185 : rd_mon | op = READ we = 0 addr = 1f wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 1f, expected data = 0
+# [SB] PASS: op=READ addr=1f rdata=0 wdata=0 valid=1
+# 195 : wr_mon | op = WRITE we = 0 addr = 20 wdata = ff rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 195 : [GEN-RD] | op = READ we = 0 addr = 20 wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 195 : [GEN-WR] | op = WRITE we = 0 addr = 3f wdata = f rdata = 0 valid = 0
+# [RM] write address = 20, data = ff
+# [SB] PASS: op=WRITE addr=20 rdata=0 wdata=ff valid=0
+# waiting for valid 
+# 215 : wr_mon | op = WRITE we = 0 addr = 20 wdata = f rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 215 : [GEN-WR] | op = WRITE we = 0 addr = 3f wdata = f0 rdata = 0 valid = 0
+# [RM] write address = 20, data = f
+# [SB] PASS: op=WRITE addr=20 rdata=0 wdata=f valid=0
+# 225 : rd_mon | op = READ we = 0 addr = 20 wdata = 0 rdata = ff valid = 1
+# [RM] read address = 20, expected data = f
+# [SB] FAIL: Data mismatch  actual=ff expected=f
+# 235 : wr_mon | op = WRITE we = 0 addr = 3f wdata = f0 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 235 : [GEN-RD] | op = READ we = 0 addr = 3f wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 235 : [GEN-WR] | op = WRITE we = 0 addr = 55 wdata = f0 rdata = 0 valid = 0
+# [RM] write address = 3f, data = f0
+# [SB] PASS: op=WRITE addr=3f rdata=0 wdata=f0 valid=0
+# waiting for valid 
+# 255 : wr_mon | op = WRITE we = 0 addr = 3f wdata = f0 rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 255 : [GEN-WR] | op = WRITE we = 0 addr = 55 wdata = f rdata = 0 valid = 0
+# [RM] write address = 3f, data = f0
+# [SB] PASS: op=WRITE addr=3f rdata=0 wdata=f0 valid=0
+# 265 : rd_mon | op = READ we = 0 addr = 3f wdata = 0 rdata = f0 valid = 1
+# [RM] read address = 3f, expected data = f0
+# [SB] PASS: op=READ addr=3f rdata=f0 wdata=0 valid=1
+# 275 : wr_mon | op = WRITE we = 0 addr = 55 wdata = f rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 275 : [GEN-RD] | op = READ we = 0 addr = 55 wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 275 : [GEN-WR] | op = WRITE we = 0 addr = 70 wdata = a5 rdata = 0 valid = 0
+# [RM] write address = 55, data = f
+# [SB] PASS: op=WRITE addr=55 rdata=0 wdata=f valid=0
+# waiting for valid 
+# 295 : wr_mon | op = WRITE we = 0 addr = 55 wdata = a5 rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 295 : [GEN-WR] | op = WRITE we = 0 addr = 70 wdata = 5a rdata = 0 valid = 0
+# [RM] write address = 55, data = a5
+# [SB] PASS: op=WRITE addr=55 rdata=0 wdata=a5 valid=0
+# 305 : rd_mon | op = READ we = 0 addr = 55 wdata = 0 rdata = f valid = 1
+# [RM] read address = 55, expected data = a5
+# [SB] FAIL: Data mismatch  actual=f expected=a5
+# 315 : wr_mon | op = WRITE we = 0 addr = 70 wdata = 5a rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 315 : [GEN-RD] | op = READ we = 0 addr = 70 wdata = 0 rdata = 0 valid = 0
+# [GEN] Sending 1 writes
+# 315 : [GEN-WR] | op = WRITE we = 0 addr = 7f wdata = 5a rdata = 0 valid = 0
+# [RM] write address = 70, data = 5a
+# [SB] PASS: op=WRITE addr=70 rdata=0 wdata=5a valid=0
+# waiting for valid 
+# 335 : wr_mon | op = WRITE we = 0 addr = 70 wdata = 5a rdata = 0 valid = 0
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 1 writes
+# 335 : [GEN-WR] | op = WRITE we = 0 addr = 7f wdata = a5 rdata = 0 valid = 0
+# [RM] write address = 70, data = 5a
+# [SB] PASS: op=WRITE addr=70 rdata=0 wdata=5a valid=0
+# 345 : rd_mon | op = READ we = 0 addr = 70 wdata = 0 rdata = 5a valid = 1
+# [RM] read address = 70, expected data = 5a
+# [SB] PASS: op=READ addr=70 rdata=5a wdata=0 valid=1
+# 355 : wr_mon | op = WRITE we = 0 addr = 7f wdata = a5 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 0 reads
+# [GEN] Sending 0 writes
+# [GEN] All writes done
+# [GEN] Sending 1 reads
+# 355 : [GEN-RD] | op = READ we = 0 addr = 7f wdata = 0 rdata = 0 valid = 0
+# [RM] write address = 7f, data = a5
+# [SB] PASS: op=WRITE addr=7f rdata=0 wdata=a5 valid=0
+# waiting for valid 
+# 385 : rd_mon | op = READ we = 0 addr = 7f wdata = 0 rdata = a5 valid = 1
+# [RM] read address = 7f, expected data = a5
+# [SB] PASS: op=READ addr=7f rdata=a5 wdata=0 valid=1
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# 
+# ==================================================
+# [SB] SCOREBOARD REPORT
+# ==================================================
+# [SB] Pass  = 21
+# [SB] Fail  = 3
+# [SB] Total = 24
+# [SB] RESULT: FAILURES DETECTED
+# ==================================================
+# 
+# 
+# ==================================================
+# [TOP] TEST COMPLETED : ram_same_addr_overwrite_test
+# ==================================================
+# 
+# waiting for valid 
+# waiting for valid 
+# ** Note: $stop    : ./verification/ram_tb_top.sv(88)
+#    Time: 675 ns  Iteration: 0  Instance: /ram_tb_top
+# Break in Module ram_tb_top at ./verification/ram_tb_top.sv line 88
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# End time: 10:50:40 on Sep 19,2026, Elapsed time: 0:00:28
+# Errors: 2, Warnings: 1
+# 
+# ====================================
+# RUNNING TEST: ram_toggle_addr_test
+# ====================================
+# 

@@ -1,0 +1,317 @@
+# vsim -c -coverage ram_tb_top_opt -l logs/ram_random_test.log "+TESTNAME=ram_random_test" 
+# Start time: 10:47:37 on Sep 19,2026
+# Loading sv_std.std
+# Loading work.ram_tb_top_sv_unit(fast)
+# Loading work.ram_tb_top(fast)
+# Loading work.ram_if(fast__2)
+# Loading work.decoder_ram(fast)
+# Loading work.ram_if(fast)
+# 
+# ==================================================
+# [TOP] RUNNING TEST : ram_random_test
+# ==================================================
+# 
+# [ENV] All components built
+# applying the reset task 
+# WR_MON Started
+# RD_MON Started
+# [RM] Reference model write task started
+# [RM] Reference model read task started
+# [SB] read check started
+# [SB] write check started
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# reset deasserted 
+# [ENV] All threads started, DUT reset done
+# 
+# [TEST] ===== ram_random_test =====
+# [GEN] Sending 32 writes
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 7 wdata = de rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 4e wdata = 23 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 3 wdata = 94 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 35 wdata = 5c rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 23 wdata = fb rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 45 wdata = 27 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 76 wdata = 82 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 26 wdata = ad rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 52 wdata = 9e rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 2f wdata = 1c rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 48 wdata = c8 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 41 wdata = bd rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 6b wdata = fd rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 6b wdata = 47 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 9 wdata = a9 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 40 wdata = 61 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 4b wdata = c7 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 6a wdata = 47 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 69 wdata = 57 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 5f wdata = 1e rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 61 wdata = 11 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 56 wdata = 89 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 41 wdata = 16 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 49 wdata = 3 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 69 wdata = 3c rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 45 wdata = 23 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 1f wdata = 7e rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 7a wdata = 29 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 68 wdata = 4c rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 36 wdata = 53 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 25 wdata = 2e rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 1 addr = 36 wdata = 28 rdata = 0 valid = 0
+# waiting for valid 
+# waiting for valid 
+# 55 : wr_mon | op = WRITE we = 0 addr = 7 wdata = de rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 7, data = de
+# [SB] PASS: op=WRITE addr=7 rdata=0 wdata=de valid=0
+# waiting for valid 
+# 75 : wr_mon | op = WRITE we = 0 addr = 4e wdata = 23 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 4e, data = 23
+# [SB] PASS: op=WRITE addr=4e rdata=0 wdata=23 valid=0
+# waiting for valid 
+# 95 : wr_mon | op = WRITE we = 0 addr = 3 wdata = 94 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 3, data = 94
+# [SB] PASS: op=WRITE addr=3 rdata=0 wdata=94 valid=0
+# waiting for valid 
+# 115 : wr_mon | op = WRITE we = 0 addr = 35 wdata = 5c rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 35, data = 5c
+# [SB] PASS: op=WRITE addr=35 rdata=0 wdata=5c valid=0
+# waiting for valid 
+# 135 : wr_mon | op = WRITE we = 0 addr = 23 wdata = fb rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 23, data = fb
+# [SB] PASS: op=WRITE addr=23 rdata=0 wdata=fb valid=0
+# waiting for valid 
+# 155 : wr_mon | op = WRITE we = 0 addr = 45 wdata = 27 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 45, data = 27
+# [SB] PASS: op=WRITE addr=45 rdata=0 wdata=27 valid=0
+# waiting for valid 
+# 175 : wr_mon | op = WRITE we = 0 addr = 76 wdata = 82 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 76, data = 82
+# [SB] PASS: op=WRITE addr=76 rdata=0 wdata=82 valid=0
+# waiting for valid 
+# 195 : wr_mon | op = WRITE we = 0 addr = 26 wdata = ad rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 26, data = ad
+# [SB] PASS: op=WRITE addr=26 rdata=0 wdata=ad valid=0
+# waiting for valid 
+# 215 : wr_mon | op = WRITE we = 0 addr = 52 wdata = 9e rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 52, data = 9e
+# [SB] PASS: op=WRITE addr=52 rdata=0 wdata=9e valid=0
+# waiting for valid 
+# 235 : wr_mon | op = WRITE we = 0 addr = 2f wdata = 1c rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 2f, data = 1c
+# [SB] PASS: op=WRITE addr=2f rdata=0 wdata=1c valid=0
+# waiting for valid 
+# 255 : wr_mon | op = WRITE we = 0 addr = 48 wdata = c8 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 48, data = c8
+# [SB] PASS: op=WRITE addr=48 rdata=0 wdata=c8 valid=0
+# waiting for valid 
+# 275 : wr_mon | op = WRITE we = 0 addr = 41 wdata = bd rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 41, data = bd
+# [SB] PASS: op=WRITE addr=41 rdata=0 wdata=bd valid=0
+# waiting for valid 
+# 295 : wr_mon | op = WRITE we = 0 addr = 6b wdata = fd rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 6b, data = fd
+# [SB] PASS: op=WRITE addr=6b rdata=0 wdata=fd valid=0
+# waiting for valid 
+# 315 : wr_mon | op = WRITE we = 0 addr = 6b wdata = 47 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 6b, data = 47
+# [SB] PASS: op=WRITE addr=6b rdata=0 wdata=47 valid=0
+# waiting for valid 
+# 335 : wr_mon | op = WRITE we = 0 addr = 9 wdata = a9 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 9, data = a9
+# [SB] PASS: op=WRITE addr=9 rdata=0 wdata=a9 valid=0
+# waiting for valid 
+# 355 : wr_mon | op = WRITE we = 0 addr = 40 wdata = 61 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 40, data = 61
+# [SB] PASS: op=WRITE addr=40 rdata=0 wdata=61 valid=0
+# waiting for valid 
+# 375 : wr_mon | op = WRITE we = 0 addr = 4b wdata = c7 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 4b, data = c7
+# [SB] PASS: op=WRITE addr=4b rdata=0 wdata=c7 valid=0
+# waiting for valid 
+# 395 : wr_mon | op = WRITE we = 0 addr = 6a wdata = 47 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 6a, data = 47
+# [SB] PASS: op=WRITE addr=6a rdata=0 wdata=47 valid=0
+# waiting for valid 
+# 415 : wr_mon | op = WRITE we = 0 addr = 69 wdata = 57 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 69, data = 57
+# [SB] PASS: op=WRITE addr=69 rdata=0 wdata=57 valid=0
+# waiting for valid 
+# 435 : wr_mon | op = WRITE we = 0 addr = 5f wdata = 1e rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 5f, data = 1e
+# [SB] PASS: op=WRITE addr=5f rdata=0 wdata=1e valid=0
+# waiting for valid 
+# 455 : wr_mon | op = WRITE we = 0 addr = 61 wdata = 11 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 61, data = 11
+# [SB] PASS: op=WRITE addr=61 rdata=0 wdata=11 valid=0
+# waiting for valid 
+# 475 : wr_mon | op = WRITE we = 0 addr = 56 wdata = 89 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 56, data = 89
+# [SB] PASS: op=WRITE addr=56 rdata=0 wdata=89 valid=0
+# waiting for valid 
+# 495 : wr_mon | op = WRITE we = 0 addr = 41 wdata = 16 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 41, data = 16
+# [SB] PASS: op=WRITE addr=41 rdata=0 wdata=16 valid=0
+# waiting for valid 
+# 515 : wr_mon | op = WRITE we = 0 addr = 49 wdata = 3 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 49, data = 3
+# [SB] PASS: op=WRITE addr=49 rdata=0 wdata=3 valid=0
+# waiting for valid 
+# 535 : wr_mon | op = WRITE we = 0 addr = 69 wdata = 3c rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 69, data = 3c
+# [SB] PASS: op=WRITE addr=69 rdata=0 wdata=3c valid=0
+# waiting for valid 
+# 555 : wr_mon | op = WRITE we = 0 addr = 45 wdata = 23 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 45, data = 23
+# [SB] PASS: op=WRITE addr=45 rdata=0 wdata=23 valid=0
+# waiting for valid 
+# 575 : wr_mon | op = WRITE we = 0 addr = 1f wdata = 7e rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 1f, data = 7e
+# [SB] PASS: op=WRITE addr=1f rdata=0 wdata=7e valid=0
+# waiting for valid 
+# 595 : wr_mon | op = WRITE we = 0 addr = 7a wdata = 29 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 7a, data = 29
+# [SB] PASS: op=WRITE addr=7a rdata=0 wdata=29 valid=0
+# waiting for valid 
+# 615 : wr_mon | op = WRITE we = 0 addr = 68 wdata = 4c rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 68, data = 4c
+# [SB] PASS: op=WRITE addr=68 rdata=0 wdata=4c valid=0
+# waiting for valid 
+# 635 : wr_mon | op = WRITE we = 0 addr = 36 wdata = 53 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 36, data = 53
+# [SB] PASS: op=WRITE addr=36 rdata=0 wdata=53 valid=0
+# waiting for valid 
+# 655 : wr_mon | op = WRITE we = 0 addr = 25 wdata = 2e rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 25, data = 2e
+# [SB] PASS: op=WRITE addr=25 rdata=0 wdata=2e valid=0
+# waiting for valid 
+# 675 : wr_mon | op = WRITE we = 0 addr = 36 wdata = 28 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 16 reads
+# 675 : [GEN-RD] | op = READ we = 0 addr = 6d wdata = b9 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 1 addr = 2b wdata = 3 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 25 wdata = 6d rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 75 wdata = 34 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 1 addr = 35 wdata = 3c rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 4b wdata = 47 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 42 wdata = b2 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 3b wdata = e1 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 17 wdata = c0 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 52 wdata = 61 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 1 addr = 61 wdata = 33 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 32 wdata = b rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 1 addr = 67 wdata = 51 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 1 addr = 36 wdata = c2 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 10 wdata = b6 rdata = 0 valid = 0
+# 675 : [GEN-RD] | op = READ we = 0 addr = 28 wdata = 68 rdata = 0 valid = 0
+# [RM] write address = 36, data = 28
+# [SB] PASS: op=WRITE addr=36 rdata=0 wdata=28 valid=0
+# waiting for valid 
+# 705 : rd_mon | op = READ we = 0 addr = 6d wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 6d, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 725 : rd_mon | op = READ we = 0 addr = 2b wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 2b, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 745 : rd_mon | op = READ we = 0 addr = 25 wdata = 0 rdata = 2e valid = 1
+# [RM] read address = 25, expected data = 2e
+# [SB] PASS: op=READ addr=25 rdata=2e wdata=0 valid=1
+# 765 : rd_mon | op = READ we = 0 addr = 75 wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 75, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 785 : rd_mon | op = READ we = 0 addr = 35 wdata = 0 rdata = 5c valid = 1
+# [RM] read address = 35, expected data = 5c
+# [SB] PASS: op=READ addr=35 rdata=5c wdata=0 valid=1
+# 805 : rd_mon | op = READ we = 0 addr = 4b wdata = 0 rdata = c7 valid = 1
+# [RM] read address = 4b, expected data = c7
+# [SB] PASS: op=READ addr=4b rdata=c7 wdata=0 valid=1
+# 825 : rd_mon | op = READ we = 0 addr = 42 wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 42, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 845 : rd_mon | op = READ we = 0 addr = 3b wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 3b, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 865 : rd_mon | op = READ we = 0 addr = 17 wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 17, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 885 : rd_mon | op = READ we = 0 addr = 52 wdata = 0 rdata = 9e valid = 1
+# [RM] read address = 52, expected data = 9e
+# [SB] PASS: op=READ addr=52 rdata=9e wdata=0 valid=1
+# 905 : rd_mon | op = READ we = 0 addr = 61 wdata = 0 rdata = 11 valid = 1
+# [RM] read address = 61, expected data = 11
+# [SB] PASS: op=READ addr=61 rdata=11 wdata=0 valid=1
+# 925 : rd_mon | op = READ we = 0 addr = 32 wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 32, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 945 : rd_mon | op = READ we = 0 addr = 67 wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 67, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# 965 : rd_mon | op = READ we = 0 addr = 36 wdata = 0 rdata = 28 valid = 1
+# [RM] read address = 36, expected data = 28
+# [SB] PASS: op=READ addr=36 rdata=28 wdata=0 valid=1
+# 
+# ==================================================
+# [SB] SCOREBOARD REPORT
+# ==================================================
+# [SB] Pass  = 38
+# [SB] Fail  = 8
+# [SB] Total = 46
+# [SB] RESULT: FAILURES DETECTED
+# ==================================================
+# 
+# 
+# ==================================================
+# [TOP] TEST COMPLETED : ram_random_test
+# ==================================================
+# 
+# 985 : rd_mon | op = READ we = 0 addr = 10 wdata = 0 rdata = 0 valid = 1
+# [RM] read address = 10, expected data = x
+# [SB] FAIL: Data mismatch  actual=0 expected=x
+# ** Note: $stop    : ./verification/ram_tb_top.sv(88)
+#    Time: 995 ns  Iteration: 0  Instance: /ram_tb_top
+# Break in Module ram_tb_top at ./verification/ram_tb_top.sv line 88
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# End time: 10:48:02 on Sep 19,2026, Elapsed time: 0:00:25
+# Errors: 2, Warnings: 1
+# 
+# ====================================
+# RUNNING TEST: ram_block_boundary_test
+# ====================================
+# 

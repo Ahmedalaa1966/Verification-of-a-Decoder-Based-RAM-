@@ -1,0 +1,158 @@
+# vsim -c -coverage ram_tb_top_opt -l logs/ram_block_boundary_test.log "+TESTNAME=ram_block_boundary_test" 
+# Start time: 10:48:02 on Sep 19,2026
+# Loading sv_std.std
+# Loading work.ram_tb_top_sv_unit(fast)
+# Loading work.ram_tb_top(fast)
+# Loading work.ram_if(fast__2)
+# Loading work.decoder_ram(fast)
+# Loading work.ram_if(fast)
+# 
+# ==================================================
+# [TOP] RUNNING TEST : ram_block_boundary_test
+# ==================================================
+# 
+# [ENV] All components built
+# applying the reset task 
+# WR_MON Started
+# RD_MON Started
+# [RM] Reference model write task started
+# [RM] Reference model read task started
+# [SB] read check started
+# [SB] write check started
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# reset deasserted 
+# [ENV] All threads started, DUT reset done
+# 
+# [TEST] ===== ram_block_boundary_test =====
+# [GEN] Sending 8 writes
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 0 wdata = aa rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 1f wdata = bb rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 20 wdata = cc rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 3f wdata = dd rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 40 wdata = ee rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 5f wdata = ff rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 60 wdata = 11 rdata = 0 valid = 0
+# 35 : [GEN-WR] | op = WRITE we = 0 addr = 7f wdata = 22 rdata = 0 valid = 0
+# waiting for valid 
+# waiting for valid 
+# 55 : wr_mon | op = WRITE we = 0 addr = 0 wdata = aa rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 0, data = aa
+# [SB] PASS: op=WRITE addr=0 rdata=0 wdata=aa valid=0
+# waiting for valid 
+# 75 : wr_mon | op = WRITE we = 0 addr = 1f wdata = bb rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 1f, data = bb
+# [SB] PASS: op=WRITE addr=1f rdata=0 wdata=bb valid=0
+# waiting for valid 
+# 95 : wr_mon | op = WRITE we = 0 addr = 20 wdata = cc rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 20, data = cc
+# [SB] PASS: op=WRITE addr=20 rdata=0 wdata=cc valid=0
+# waiting for valid 
+# 115 : wr_mon | op = WRITE we = 0 addr = 3f wdata = dd rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 3f, data = dd
+# [SB] PASS: op=WRITE addr=3f rdata=0 wdata=dd valid=0
+# waiting for valid 
+# 135 : wr_mon | op = WRITE we = 0 addr = 40 wdata = ee rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 40, data = ee
+# [SB] PASS: op=WRITE addr=40 rdata=0 wdata=ee valid=0
+# waiting for valid 
+# 155 : wr_mon | op = WRITE we = 0 addr = 5f wdata = ff rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 5f, data = ff
+# [SB] PASS: op=WRITE addr=5f rdata=0 wdata=ff valid=0
+# waiting for valid 
+# 175 : wr_mon | op = WRITE we = 0 addr = 60 wdata = 11 rdata = 0 valid = 0
+# waiting for valid 
+# [RM] write address = 60, data = 11
+# [SB] PASS: op=WRITE addr=60 rdata=0 wdata=11 valid=0
+# waiting for valid 
+# 195 : wr_mon | op = WRITE we = 0 addr = 7f wdata = 22 rdata = 0 valid = 0
+# waiting for valid 
+# [GEN] All writes done
+# [GEN] Sending 8 reads
+# 195 : [GEN-RD] | op = READ we = 0 addr = 0 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 1f wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 20 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 3f wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 40 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 5f wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 60 wdata = 0 rdata = 0 valid = 0
+# 195 : [GEN-RD] | op = READ we = 0 addr = 7f wdata = 0 rdata = 0 valid = 0
+# [RM] write address = 7f, data = 22
+# [SB] PASS: op=WRITE addr=7f rdata=0 wdata=22 valid=0
+# waiting for valid 
+# 225 : rd_mon | op = READ we = 0 addr = 0 wdata = 0 rdata = aa valid = 1
+# [RM] read address = 0, expected data = aa
+# [SB] PASS: op=READ addr=0 rdata=aa wdata=0 valid=1
+# 245 : rd_mon | op = READ we = 0 addr = 1f wdata = 0 rdata = bb valid = 1
+# [RM] read address = 1f, expected data = bb
+# [SB] PASS: op=READ addr=1f rdata=bb wdata=0 valid=1
+# 265 : rd_mon | op = READ we = 0 addr = 20 wdata = 0 rdata = cc valid = 1
+# [RM] read address = 20, expected data = cc
+# [SB] PASS: op=READ addr=20 rdata=cc wdata=0 valid=1
+# 285 : rd_mon | op = READ we = 0 addr = 3f wdata = 0 rdata = dd valid = 1
+# [RM] read address = 3f, expected data = dd
+# [SB] PASS: op=READ addr=3f rdata=dd wdata=0 valid=1
+# 305 : rd_mon | op = READ we = 0 addr = 40 wdata = 0 rdata = ee valid = 1
+# [RM] read address = 40, expected data = ee
+# [SB] PASS: op=READ addr=40 rdata=ee wdata=0 valid=1
+# 325 : rd_mon | op = READ we = 0 addr = 5f wdata = 0 rdata = ff valid = 1
+# [RM] read address = 5f, expected data = ff
+# [SB] PASS: op=READ addr=5f rdata=ff wdata=0 valid=1
+# 345 : rd_mon | op = READ we = 0 addr = 60 wdata = 0 rdata = 11 valid = 1
+# [RM] read address = 60, expected data = 11
+# [SB] PASS: op=READ addr=60 rdata=11 wdata=0 valid=1
+# 365 : rd_mon | op = READ we = 0 addr = 7f wdata = 0 rdata = 22 valid = 1
+# [RM] read address = 7f, expected data = 22
+# [SB] PASS: op=READ addr=7f rdata=22 wdata=0 valid=1
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# waiting for valid 
+# 
+# ==================================================
+# [SB] SCOREBOARD REPORT
+# ==================================================
+# [SB] Pass  = 16
+# [SB] Fail  = 0
+# [SB] Total = 16
+# [SB] RESULT: ALL CHECKS PASSED
+# ==================================================
+# 
+# 
+# ==================================================
+# [TOP] TEST COMPLETED : ram_block_boundary_test
+# ==================================================
+# 
+# waiting for valid 
+# waiting for valid 
+# ** Note: $stop    : ./verification/ram_tb_top.sv(88)
+#    Time: 515 ns  Iteration: 0  Instance: /ram_tb_top
+# Break in Module ram_tb_top at ./verification/ram_tb_top.sv line 88
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/Decoder_Based_RAM/RAM VERIFICATION.mpf).  File can not be renamed.
+# End time: 10:48:25 on Sep 19,2026, Elapsed time: 0:00:23
+# Errors: 2, Warnings: 1
+# 
+# ====================================
+# RUNNING TEST: ram_full_sweep_test
+# ====================================
+# 
