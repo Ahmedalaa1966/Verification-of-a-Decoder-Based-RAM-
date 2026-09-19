@@ -1,0 +1,1154 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /ram_tb_top/ramif
+=== Design Unit: work.ram_if
+=================================================================================
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      12        12         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /ram_tb_top/ramif --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./verification/ram_if.sv
+    14              1                          1     
+    20              1                          1     
+    24              1                          1     
+    28              1                          1     
+    29              1                          1     
+    33              1                          1     
+    35              1                          1     
+    36              1                          1     
+    37              1                          1     
+    38              1                          1     
+    39              1                          1     
+    40              1                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         60        55         5    91.66%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /ram_tb_top/ramif --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                             rst_n           0           1           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         28 
+Toggled Node Count   =         27 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      91.66% (55 of 60 bins)
+
+=================================================================================
+=== Instance: /ram_tb_top/dut
+=== Design Unit: work.decoder_ram
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        16        14         2    87.50%
+
+================================Branch Details================================
+
+Branch Coverage for instance /ram_tb_top/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./rtl/decoder_ram.sv
+------------------------------------IF Branch------------------------------------
+    27                                        34     Count coming in to IF
+    27              1                          2     
+    35              1                          8     
+                                              24     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    36                                         8     Count coming in to CASE
+    37              1                          2     
+    38              1                          2     
+    39              1                          2     
+    40              1                          2     
+    41              1                    ***0***     
+Branch totals: 4 hits of 5 branches = 80.00%
+
+------------------------------------IF Branch------------------------------------
+    48                                        52     Count coming in to IF
+    48              1                          4     
+    52              1                          8     
+    62              1                         40     
+Branch totals: 3 hits of 3 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    53                                         8     Count coming in to CASE
+    54              1                          2     
+    55              1                          2     
+    56              1                          2     
+    57              1                          2     
+    58              1                    ***0***     
+Branch totals: 4 hits of 5 branches = 80.00%
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         4         0   100.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /ram_tb_top/dut --
+
+  File ./rtl/decoder_ram.sv
+----------------Focused Expression View-----------------
+Line       15 Item    1  (vif.addr[6:5] == 0)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       16 Item    1  (vif.addr[6:5] == 1)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       17 Item    1  (vif.addr[6:5] == 2)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Expression View-----------------
+Line       18 Item    1  (vif.addr[6:5] == 3)
+Expression totals: 1 of 1 input term covered = 100.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      26        25         1    96.15%
+
+================================Statement Details================================
+
+Statement Coverage for instance /ram_tb_top/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./rtl/decoder_ram.sv
+    12              1                         30     
+    15              1                         30     
+    16              1                         30     
+    17              1                         30     
+    18              1                         30     
+    26              1                         34     
+    28              1                          2     
+    28              2                         64     
+    29              1                         64     
+    30              1                         64     
+    31              1                         64     
+    32              1                         64     
+    37              1                          2     
+    38              1                          2     
+    39              1                          2     
+    40              1                          2     
+    47              1                         52     
+    49              1                          4     
+    50              1                          4     
+    54              1                          2     
+    55              1                          2     
+    56              1                          2     
+    57              1                          2     
+    58              1                    ***0***     
+    60              1                          8     
+    63              1                         40     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                        210        18       192     8.57%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /ram_tb_top/dut --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                           i[31-0]           0           0           0           0           0           0           3        0.00 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         41 
+Toggled Node Count   =          9 
+Untoggled Node Count =         32 
+
+Toggle Coverage      =       8.57% (18 of 210 bins)
+
+=================================================================================
+=== Instance: /ram_tb_top
+=== Design Unit: work.ram_tb_top
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        14         2        12    14.28%
+
+================================Branch Details================================
+
+Branch Coverage for instance /ram_tb_top
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./verification/ram_tb_top.sv
+------------------------------------IF Branch------------------------------------
+    24                                         1     Count coming in to IF
+    24              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------CASE Branch------------------------------------
+    36                                         1     Count coming in to CASE
+    92              1                    ***0***     
+    92              1                          1     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    92              1                    ***0***     
+    71              1                    ***0***     
+Branch totals: 1 hit of 12 branches = 8.33%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      34        14        20    41.17%
+
+================================Statement Details================================
+
+Statement Coverage for instance /ram_tb_top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./verification/ram_tb_top.sv
+    9               1                          1     
+    10              1                          1     
+    10              2                        103     
+    10              3                        102     
+    25              1                    ***0***     
+    26              1                    ***0***     
+    27              1                    ***0***     
+    28              1                    ***0***     
+    29              1                    ***0***     
+    32              1                          1     
+    33              1                          1     
+    34              1                          1     
+    39              1                    ***0***     
+    42              1                          1     
+    45              1                    ***0***     
+    48              1                    ***0***     
+    51              1                    ***0***     
+    54              1                    ***0***     
+    57              1                    ***0***     
+    60              1                    ***0***     
+    63              1                    ***0***     
+    66              1                    ***0***     
+    69              1                    ***0***     
+    72              1                    ***0***     
+    73              1                    ***0***     
+    74              1                    ***0***     
+    75              1                    ***0***     
+    76              1                    ***0***     
+    81              1                          1     
+    83              1                          1     
+    84              1                          1     
+    85              1                          1     
+    87              1                          1     
+    88              1                          1     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          2         2         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /ram_tb_top --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =          1 
+Toggled Node Count   =          1 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (2 of 2 bins)
+
+=================================================================================
+=== Instance: /ram_tb_top_sv_unit
+=== Design Unit: work.ram_tb_top_sv_unit
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        43        17        26    39.53%
+
+================================Branch Details================================
+
+Branch Coverage for instance /ram_tb_top_sv_unit
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./verification/ram_generator.sv
+------------------------------------IF Branch------------------------------------
+    47                                         1     Count coming in to IF
+    47              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    48                                         1     Count coming in to IF
+    48              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    52                                         1     Count coming in to IF
+    52              1                    ***0***     
+    59              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    55                                   ***0***     Count coming in to IF
+    55              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    75                                         1     Count coming in to IF
+    75              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    76                                         1     Count coming in to IF
+    76              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    80                                         1     Count coming in to IF
+    80              1                    ***0***     
+    87              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    83                                   ***0***     Count coming in to IF
+    83              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File ./verification/ram_monitor.sv
+------------------------------------IF Branch------------------------------------
+    29                                        51     Count coming in to IF
+    29              1                          8     
+                                              43     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                        51     Count coming in to IF
+    78              1                          8     
+                                              43     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    84                                        51     Count coming in to IF
+    84              1                          8     
+    100             1                         35     
+                                               8     All False Count
+Branch totals: 3 hits of 3 branches = 100.00%
+
+
+  File ./verification/ram_scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    60                                        16     Count coming in to IF
+    60              1                          8     
+    62              1                          8     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                        16     Count coming in to IF
+    67              1                         16     
+    72              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    74                                   ***0***     Count coming in to IF
+    74              1                    ***0***     
+    76              1                    ***0***     
+    80              1                    ***0***     
+Branch totals: 0 hits of 3 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                   ***0***     Count coming in to IF
+    78              1                    ***0***     
+    78              2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    79                                   ***0***     Count coming in to IF
+    79              1                    ***0***     
+    79              2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    93                                         1     Count coming in to IF
+    93              1                          1     
+    95              1                    ***0***     
+    97              1                    ***0***     
+Branch totals: 1 hit of 3 branches = 33.33%
+
+
+  File ./verification/ram_test.sv
+------------------------------------IF Branch------------------------------------
+    482                                  ***0***     Count coming in to IF
+    482             1                    ***0***     
+    482             2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    486                                  ***0***     Count coming in to IF
+    486             1                    ***0***     
+    486             2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    535                                  ***0***     Count coming in to IF
+    535             1                    ***0***     
+    535             2                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                      18         5        13    27.77%
+
+================================Condition Details================================
+
+Condition Coverage for instance /ram_tb_top_sv_unit --
+
+  File ./verification/ram_generator.sv
+----------------Focused Condition View-------------------
+Line       48 Item    1  ((size(wr_addrs) < n_writes) || (size(wr_datas) < n_writes))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+                   Input Term   Covered  Reason for no coverage   Hint
+                  -----------  --------  -----------------------  --------------
+  (size(wr_addrs) < n_writes)         N  '_1' not hit             Hit '_1'
+  (size(wr_datas) < n_writes)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                     Non-masking condition(s)      
+ ---------  ---------  --------------------           -------------------------     
+  Row   1:          1  (size(wr_addrs) < n_writes)_0  ~(size(wr_datas) < n_writes)  
+  Row   2:    ***0***  (size(wr_addrs) < n_writes)_1  -                             
+  Row   3:          1  (size(wr_datas) < n_writes)_0  ~(size(wr_addrs) < n_writes)  
+  Row   4:    ***0***  (size(wr_datas) < n_writes)_1  ~(size(wr_addrs) < n_writes)  
+
+----------------Focused Condition View-------------------
+Line       76 Item    1  (size(rd_addrs) < n_reads)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+                  Input Term   Covered  Reason for no coverage   Hint
+                 -----------  --------  -----------------------  --------------
+  (size(rd_addrs) < n_reads)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                    Non-masking condition(s)      
+ ---------  ---------  --------------------          -------------------------     
+  Row   1:          1  (size(rd_addrs) < n_reads)_0  -                             
+  Row   2:    ***0***  (size(rd_addrs) < n_reads)_1  -                             
+
+
+
+----------------Focused Condition View-------------------
+Line       78 Item    1  (~pending_read && this.vif.mon_cb.re)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       84 Item    1  (pending_read && this.vif.mon_cb.valid)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+
+
+----------------Focused Condition View-------------------
+Line       60 Item    1  (actual.op == READ)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       67 Item    1  ((addr_match && data_match) && valid_match)
+Condition totals: 0 of 3 input terms covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+   addr_match         N  '_0' not hit             Hit '_0'
+   data_match         N  '_0' not hit             Hit '_0'
+  valid_match         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  addr_match_0          -                             
+  Row   2:          1  addr_match_1          (valid_match && data_match)   
+  Row   3:    ***0***  data_match_0          addr_match                    
+  Row   4:          1  data_match_1          (valid_match && addr_match)   
+  Row   5:    ***0***  valid_match_0         (addr_match && data_match)    
+  Row   6:          1  valid_match_1         (addr_match && data_match)    
+
+----------------Focused Condition View-------------------
+Line       78 Item    1  (actual.op == READ)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+  (actual.op == READ)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:    ***0***  (actual.op == READ)_0  -                             
+  Row   2:    ***0***  (actual.op == READ)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       79 Item    1  (actual.op == READ)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+           Input Term   Covered  Reason for no coverage   Hint
+          -----------  --------  -----------------------  --------------
+  (actual.op == READ)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target             Non-masking condition(s)      
+ ---------  ---------  --------------------   -------------------------     
+  Row   1:    ***0***  (actual.op == READ)_0  -                             
+  Row   2:    ***0***  (actual.op == READ)_1  -                             
+
+----------------Focused Condition View-------------------
+Line       93 Item    1  ((this.fail_count == 0) && ((this.pass_count + this.fail_count) > 0))
+Condition totals: 0 of 2 input terms covered = 0.00%
+
+                                 Input Term   Covered  Reason for no coverage   Hint
+                                -----------  --------  -----------------------  --------------
+                     (this.fail_count == 0)         N  '_0' not hit             Hit '_0'
+  ((this.pass_count + this.fail_count) > 0)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                                   Non-masking condition(s)      
+ ---------  ---------  --------------------                         -------------------------     
+  Row   1:    ***0***  (this.fail_count == 0)_0                     -                             
+  Row   2:          1  (this.fail_count == 0)_1                     ((this.pass_count + this.fail_count) > 0)
+  Row   3:    ***0***  ((this.pass_count + this.fail_count) > 0)_0  (this.fail_count == 0)        
+  Row   4:          1  ((this.pass_count + this.fail_count) > 0)_1  (this.fail_count == 0)        
+
+----------------Focused Condition View-------------------
+Line       95 Item    1  (this.fail_count > 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+             Input Term   Covered  Reason for no coverage   Hint
+            -----------  --------  -----------------------  --------------
+  (this.fail_count > 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target               Non-masking condition(s)      
+ ---------  ---------  --------------------     -------------------------     
+  Row   1:    ***0***  (this.fail_count > 0)_0  -                             
+  Row   2:    ***0***  (this.fail_count > 0)_1  -                             
+
+
+
+----------------Focused Condition View-------------------
+Line       482 Item    1  ((i % 2) == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  ((i % 2) == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  ((i % 2) == 0)_0      -                             
+  Row   2:    ***0***  ((i % 2) == 0)_1      -                             
+
+----------------Focused Condition View-------------------
+Line       486 Item    1  ((i % 2) == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+      Input Term   Covered  Reason for no coverage   Hint
+     -----------  --------  -----------------------  --------------
+  ((i % 2) == 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  ((i % 2) == 0)_0      -                             
+  Row   2:    ***0***  ((i % 2) == 0)_1      -                             
+
+
+Expression Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Expressions                      4         0         4     0.00%
+
+================================Expression Details================================
+
+Expression Coverage for instance /ram_tb_top_sv_unit --
+
+  File ./verification/ram_scoreboard.sv
+----------------Focused Expression View-----------------
+Line       57 Item    1  (actual.addr == expected.addr)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                      Input Term   Covered  Reason for no coverage   Hint
+                     -----------  --------  -----------------------  --------------
+  (actual.addr == expected.addr)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                        Non-masking condition(s)      
+ ---------  ---------  --------------------              -------------------------     
+  Row   1:    ***0***  (actual.addr == expected.addr)_0  -                             
+  Row   2:          1  (actual.addr == expected.addr)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       61 Item    1  (actual.rdata == expected.rdata)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                        Input Term   Covered  Reason for no coverage   Hint
+                       -----------  --------  -----------------------  --------------
+  (actual.rdata == expected.rdata)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                          Non-masking condition(s)      
+ ---------  ---------  --------------------                -------------------------     
+  Row   1:    ***0***  (actual.rdata == expected.rdata)_0  -                             
+  Row   2:          1  (actual.rdata == expected.rdata)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       63 Item    1  (actual.wdata == expected.wdata)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                        Input Term   Covered  Reason for no coverage   Hint
+                       -----------  --------  -----------------------  --------------
+  (actual.wdata == expected.wdata)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                          Non-masking condition(s)      
+ ---------  ---------  --------------------                -------------------------     
+  Row   1:    ***0***  (actual.wdata == expected.wdata)_0  -                             
+  Row   2:          1  (actual.wdata == expected.wdata)_1  -                             
+
+----------------Focused Expression View-----------------
+Line       65 Item    1  (actual.valid == expected.valid)
+Expression totals: 0 of 1 input term covered = 0.00%
+
+                        Input Term   Covered  Reason for no coverage   Hint
+                       -----------  --------  -----------------------  --------------
+  (actual.valid == expected.valid)         N  '_0' not hit             Hit '_0'
+
+     Rows:       Hits  FEC Target                          Non-masking condition(s)      
+ ---------  ---------  --------------------                -------------------------     
+  Row   1:    ***0***  (actual.valid == expected.valid)_0  -                             
+  Row   2:          1  (actual.valid == expected.valid)_1  -                             
+
+
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     447       253       194    56.59%
+
+================================Statement Details================================
+
+Statement Coverage for instance /ram_tb_top_sv_unit --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./verification/ram_transaction.sv
+    15              1                         48     
+    16              1                         48     
+    17              1                         48     
+    18              1                         48     
+    19              1                         48     
+    20              1                         48     
+    24              1                         32     
+  File ./verification/ram_generator.sv
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    22              1                          8     
+    23              1                          8     
+    28              1                          8     
+    28              2                          8     
+    32              1                          8     
+    33              1                          8     
+    46              1                          1     
+    49              1                    ***0***     
+    53              1                    ***0***     
+    53              2                    ***0***     
+    54              1                    ***0***     
+    56              1                    ***0***     
+    57              1                    ***0***     
+    60              1                          1     
+    60              2                          8     
+    61              1                          8     
+    62              1                          8     
+    63              1                          8     
+    64              1                          8     
+    65              1                          8     
+    70              1                          1     
+    71              1                          1     
+    74              1                          1     
+    77              1                    ***0***     
+    81              1                    ***0***     
+    81              2                    ***0***     
+    82              1                    ***0***     
+    84              1                    ***0***     
+    85              1                    ***0***     
+    88              1                          1     
+    88              2                          8     
+    89              1                          8     
+    90              1                          8     
+    91              1                          8     
+    92              1                          8     
+  File ./verification/ram_driver.sv
+    15              1                          1     
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+    28              1                          4     
+    28              2                          4     
+    29              1                          1     
+    30              1                          1     
+    35              1                          8     
+    36              1                          8     
+    37              1                          8     
+    38              1                          8     
+    40              1                          8     
+    41              1                          8     
+    42              1                          8     
+    43              1                          8     
+    50              1                          1     
+    51              1                          9     
+    52              1                          8     
+    53              1                          8     
+    54              1                          8     
+    69              1                          1     
+    70              1                          1     
+    71              1                          1     
+    72              1                          1     
+    77              1                          8     
+    78              1                          8     
+    79              1                          8     
+    81              1                          8     
+    82              1                          8     
+    83              1                          8     
+    90              1                          1     
+    91              1                          9     
+    92              1                          8     
+    93              1                          8     
+    94              1                          8     
+  File ./verification/ram_monitor.sv
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+    25              1                          1     
+    27              1                          1     
+    28              1                         52     
+    31              1                          8     
+    32              1                          8     
+    33              1                          8     
+    34              1                          8     
+    36              1                          8     
+    37              1                          8     
+    39              1                          8     
+    40              1                          8     
+    60              1                          1     
+    61              1                          1     
+    62              1                          1     
+    71              1                          1     
+    72              1                          1     
+    74              1                          1     
+    75              1                         52     
+    79              1                          8     
+    80              1                          8     
+    86              1                          8     
+    87              1                          8     
+    88              1                          8     
+    89              1                          8     
+    90              1                          8     
+    92              1                          8     
+    93              1                          8     
+    95              1                          8     
+    96              1                          8     
+    98              1                          8     
+    101             1                         35     
+  File ./verification/ram_ref_model.sv
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    31              1                          1     
+    33              1                          1     
+    34              1                          9     
+    35              1                          8     
+    38              1                          8     
+    39              1                          8     
+    40              1                          8     
+    41              1                          8     
+    42              1                          8     
+    43              1                          8     
+    44              1                          8     
+    46              1                          8     
+    48              1                          8     
+    49              1                          8     
+    57              1                          1     
+    59              1                          1     
+    60              1                          9     
+    63              1                          8     
+    64              1                          8     
+    65              1                          8     
+    66              1                          8     
+    67              1                          8     
+    68              1                          8     
+    69              1                          8     
+    71              1                          8     
+    73              1                          8     
+    74              1                          8     
+  File ./verification/ram_scoreboard.sv
+    19              1                          1     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    30              1                          1     
+    32              1                          1     
+    33              1                          9     
+    34              1                          8     
+    35              1                          8     
+    42              1                          1     
+    44              1                          1     
+    45              1                          9     
+    46              1                          8     
+    47              1                          8     
+    57              1                         16     
+    61              1                          8     
+    63              1                          8     
+    65              1                         16     
+    68              1                         16     
+    69              1                         16     
+    73              1                    ***0***     
+    75              1                    ***0***     
+    77              1                    ***0***     
+    81              1                    ***0***     
+    86              1                          1     
+    87              1                          1     
+    88              1                          1     
+    89              1                          1     
+    90              1                          1     
+    91              1                          1     
+    92              1                          1     
+    94              1                          1     
+    96              1                    ***0***     
+    98              1                    ***0***     
+    99              1                          1     
+    100             1                          1     
+  File ./verification/ram_env.sv
+    51              1                          1     
+    52              1                          1     
+    53              1                          1     
+    54              1                          1     
+    56              1                          1     
+    57              1                          1     
+    58              1                          1     
+    59              1                          1     
+    60              1                          1     
+    61              1                          1     
+    62              1                          1     
+    63              1                          1     
+    64              1                          1     
+    65              1                          1     
+    73              1                          1     
+    74              1                          1     
+    75              1                          1     
+    76              1                          1     
+    77              1                          1     
+    78              1                          1     
+    79              1                          1     
+    80              1                          1     
+    89              1                          1     
+    90              1                          1     
+    91              1                          1     
+    92              1                          1     
+    93              1                          1     
+    94              1                          1     
+    95              1                          1     
+    96              1                          1     
+    98              1                          1     
+    99              1                          1     
+    115             1                          1     
+    124             1                          1     
+  File ./verification/ram_test.sv
+    26              1                          1     
+    27              1                          1     
+    28              1                          1     
+    29              1                          1     
+    30              1                          1     
+    31              1                          1     
+    35              1                          1     
+    36              1                          1     
+    40              1                    ***0***     
+    44              1                         30     
+    44              2                         30     
+    45              1                          1     
+    49              1                          1     
+    50              1                          1     
+    51              1                          1     
+    52              1                          1     
+    60              1                    ***0***     
+    68              1                    ***0***     
+    75              1                    ***0***     
+    85              1                          1     
+    106             1                    ***0***     
+    107             1                    ***0***     
+    108             1                    ***0***     
+    112             1                    ***0***     
+    113             1                    ***0***     
+    133             1                          1     
+    140             1                          1     
+    141             1                          1     
+    142             1                          1     
+    143             1                          1     
+    144             1                          1     
+    144             2                          1     
+    145             1                          1     
+    145             2                          1     
+    146             1                          1     
+    146             2                          1     
+    147             1                          1     
+    147             2                          1     
+    148             1                          1     
+    148             2                          1     
+    149             1                          1     
+    149             2                          1     
+    150             1                          1     
+    150             2                          1     
+    151             1                          1     
+    151             2                          1     
+    152             1                          1     
+    152             2                          1     
+    153             1                          1     
+    153             2                          1     
+    154             1                          1     
+    154             2                          1     
+    155             1                          1     
+    155             2                          1     
+    156             1                          1     
+    172             1                    ***0***     
+    176             1                    ***0***     
+    176             2                    ***0***     
+    177             1                    ***0***     
+    185             1                    ***0***     
+    186             1                    ***0***     
+    187             1                    ***0***     
+    188             1                    ***0***     
+    189             1                    ***0***     
+    189             2                    ***0***     
+    190             1                    ***0***     
+    191             1                    ***0***     
+    192             1                    ***0***     
+    194             1                    ***0***     
+    210             1                    ***0***     
+    218             1                    ***0***     
+    219             1                    ***0***     
+    220             1                    ***0***     
+    221             1                    ***0***     
+    222             1                    ***0***     
+    222             2                    ***0***     
+    223             1                    ***0***     
+    224             1                    ***0***     
+    225             1                    ***0***     
+    227             1                    ***0***     
+    243             1                    ***0***     
+    251             1                    ***0***     
+    252             1                    ***0***     
+    253             1                    ***0***     
+    254             1                    ***0***     
+    255             1                    ***0***     
+    255             2                    ***0***     
+    256             1                    ***0***     
+    257             1                    ***0***     
+    258             1                    ***0***     
+    260             1                    ***0***     
+    276             1                    ***0***     
+    284             1                    ***0***     
+    285             1                    ***0***     
+    286             1                    ***0***     
+    287             1                    ***0***     
+    288             1                    ***0***     
+    288             2                    ***0***     
+    289             1                    ***0***     
+    290             1                    ***0***     
+    291             1                    ***0***     
+    293             1                    ***0***     
+    309             1                    ***0***     
+    317             1                    ***0***     
+    318             1                    ***0***     
+    319             1                    ***0***     
+    320             1                    ***0***     
+    321             1                    ***0***     
+    321             2                    ***0***     
+    322             1                    ***0***     
+    323             1                    ***0***     
+    324             1                    ***0***     
+    326             1                    ***0***     
+    342             1                    ***0***     
+    354             1                    ***0***     
+    355             1                    ***0***     
+    356             1                    ***0***     
+    357             1                    ***0***     
+    358             1                    ***0***     
+    359             1                    ***0***     
+    360             1                    ***0***     
+    361             1                    ***0***     
+    363             1                    ***0***     
+    364             1                    ***0***     
+    365             1                    ***0***     
+    366             1                    ***0***     
+    367             1                    ***0***     
+    368             1                    ***0***     
+    369             1                    ***0***     
+    370             1                    ***0***     
+    372             1                    ***0***     
+    373             1                    ***0***     
+    374             1                    ***0***     
+    375             1                    ***0***     
+    376             1                    ***0***     
+    377             1                    ***0***     
+    378             1                    ***0***     
+    379             1                    ***0***     
+    381             1                    ***0***     
+    381             2                    ***0***     
+    382             1                    ***0***     
+    382             2                    ***0***     
+    383             1                    ***0***     
+    383             2                    ***0***     
+    384             1                    ***0***     
+    384             2                    ***0***     
+    386             1                    ***0***     
+    386             2                    ***0***     
+    387             1                    ***0***     
+    388             1                    ***0***     
+    389             1                    ***0***     
+    390             1                    ***0***     
+    391             1                    ***0***     
+    392             1                    ***0***     
+    393             1                    ***0***     
+    410             1                    ***0***     
+    414             1                    ***0***     
+    414             2                    ***0***     
+    415             1                    ***0***     
+    425             1                    ***0***     
+    426             1                    ***0***     
+    427             1                    ***0***     
+    428             1                    ***0***     
+    429             1                    ***0***     
+    430             1                    ***0***     
+    431             1                    ***0***     
+    431             2                    ***0***     
+    432             1                    ***0***     
+    432             2                    ***0***     
+    433             1                    ***0***     
+    434             1                    ***0***     
+    436             1                    ***0***     
+    436             2                    ***0***     
+    437             1                    ***0***     
+    438             1                    ***0***     
+    439             1                    ***0***     
+    440             1                    ***0***     
+    441             1                    ***0***     
+    442             1                    ***0***     
+    459             1                    ***0***     
+    463             1                    ***0***     
+    463             2                    ***0***     
+    464             1                    ***0***     
+    472             1                    ***0***     
+    473             1                    ***0***     
+    474             1                    ***0***     
+    475             1                    ***0***     
+    476             1                    ***0***     
+    476             2                    ***0***     
+    477             1                    ***0***     
+    478             1                    ***0***     
+    481             1                    ***0***     
+    481             2                    ***0***     
+    482             1                    ***0***     
+    483             1                    ***0***     
+    485             1                    ***0***     
+    485             2                    ***0***     
+    486             1                    ***0***     
+    487             1                    ***0***     
+    503             1                    ***0***     
+    507             1                    ***0***     
+    507             2                    ***0***     
+    508             1                    ***0***     
+    519             1                    ***0***     
+    520             1                    ***0***     
+    521             1                    ***0***     
+    522             1                    ***0***     
+    523             1                    ***0***     
+    524             1                    ***0***     
+    526             1                    ***0***     
+    526             2                    ***0***     
+    527             1                    ***0***     
+    528             1                    ***0***     
+    529             1                    ***0***     
+    532             1                    ***0***     
+    532             2                    ***0***     
+    533             1                    ***0***     
+    534             1                    ***0***     
+    535             1                    ***0***     
+    538             1                    ***0***     
+    539             1                    ***0***     
+    540             1                    ***0***     
+
+
+Total Coverage By Instance (filtered view): 41.82%
+
